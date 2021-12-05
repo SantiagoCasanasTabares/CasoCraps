@@ -34,7 +34,7 @@ public class ModelCraps {
     public void  calcularTiro() {
         caras[0] = dado1.getCara();
         caras[1] = dado2.getCara();
-        tiro = caras[1]+caras[2];
+        tiro = caras[0]+caras[1];
 
     }
 
