@@ -1,6 +1,10 @@
 package CasoCraps;
 
-
+/**
+ * This class is used for ...
+ * @autor Santiago Casanas Tabares 202025301-
+ * @version v.1.0.0 date:05/12/2021
+ */
 
 import javax.swing.*;
 import java.awt.*;
@@ -32,6 +36,9 @@ public class GUIGridBagLayout extends JFrame {
 
 
 
+    /**
+     * Constructor of GUI class
+     */
 
     public GUIGridBagLayout(){
         initGUI();
@@ -45,6 +52,11 @@ public class GUIGridBagLayout extends JFrame {
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
+    /**
+     * This method is used to set up the default JComponent Configuration,
+     * create Listener and control Objects used for the GUI class
+     */
 
     public void initGUI () {
         //Set up JFrame Container's Layout
@@ -155,11 +167,22 @@ public class GUIGridBagLayout extends JFrame {
     }
 
 
+    /**
+     * Main process of the Java program
+     * @param args Object used in order to send input data from command line when
+     *             the program is execute by console.
+     */
+
     public static void main(String[] args){
         EventQueue.invokeLater(() -> {
             GUIGridBagLayout miProjectGUI = new GUIGridBagLayout();
         });
     }
+
+
+    /**
+     * inner class that extends an Adapter Class or implements Listeners used by GUI class
+     */
 
     private class Escucha extends MouseAdapter implements ActionListener  {
 
